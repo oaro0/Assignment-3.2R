@@ -1,0 +1,27 @@
+---
+title: "Assignment3.2.2"
+author: "O. Aro"
+date: "2023-01-27"
+output: html_document
+---
+You could use this function to view my ART:
+
+```
+#install.packages("ggplot2") #download ggplot package
+library(ggplot2)
+
+make_art <- function(random){
+set.seed(random)
+displ1 <- sample(mpg$displ)
+mpg$displ1 <- displ1
+ggplot(data = mpg, 
+aes(x = displ1, y = hwy, fill=fl)) +
+geom_point(aes(color=fl), show.legend=FALSE) +
+theme_void() +
+scale_fill_brewer(palette="Blues")
+}
+ 
+```
+
+
+
