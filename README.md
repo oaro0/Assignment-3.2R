@@ -11,9 +11,9 @@ Example of how to use it:
 ```
 cheat(1)
 ```
-Lastly, this repository contains an Rmarkdown file that has the plot_art() function which enables you to view my art.
+Lastly, this repository contains an Rmarkdown file that has the make_art() function which enables you to view my art.
 
 It can be used in this manner:
 ```
-plot_art()
+make_art()
 ```
